@@ -3,9 +3,10 @@ import express from 'express'
 
 const app = express();
 
-app.use(express.json())
+app.use(express.json());
+
 app.get('/users', (request, response) => {
-    return response.json('Test')
+    return response.json('Test');
 })
 
-app.listen(3333);//localhost:3333
+app.listen(3333);
